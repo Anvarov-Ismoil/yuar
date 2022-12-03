@@ -1,3 +1,28 @@
+// loader ------>
+window.addEventListener('load', () => {
+  document.querySelector('.preloader').classList.add('loader-hide')
+})
+
+// to-top ----->
+const upArrow = document.querySelector('.to-top')
+
+// upArrow.addEventListener('click', () => {
+  //   scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   })
+  // window.open("request.html");
+// })
+
+window.addEventListener('scroll', () => {
+  if (pageYOffset > 1000) {
+    upArrow.style.transform = 'scale(1)'
+  } else {
+    upArrow.style.transform = 'scale(0)'
+  }
+})
+
+// tab ------->
 const btns = document.querySelectorAll('.products .tab-nav .btn')
 const contents = document.querySelectorAll('.products .tab-content')
 
@@ -16,7 +41,7 @@ function removeActives() {
   })
 }
 
-
+// swiper------>
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
@@ -79,11 +104,10 @@ const swiper = new Swiper('.swiper', {
   // },
 })
 
-
+// popup ------->
 const form = document.querySelector(".form");
 const emailInp = document.querySelector("#exampleInputEmail1");
 const mobileInp = document.querySelector("#exampleInputMobile1");
-// const checkInp = document.querySelector("#exampleCheck1");
 
 const close = document.querySelector('.close i');
 const popupBtns = document.querySelectorAll('.show');
@@ -109,12 +133,9 @@ const clearAll = () => {
   for (const key in errorMessages) {
     if (Object.hasOwnProperty.call(errorMessages, key)) {
       errorMessages[key] = null;
-      // console.log(key);
     }
   }
-
   targetProduct = ''
-
   document.querySelector(".email-error").textContent = errorMessages.emailError;
   document.querySelector(".phone-error").textContent = errorMessages.phoneError;
   document.querySelector('.box-name').classList.remove('error');
@@ -135,12 +156,6 @@ const validateForm = function () {
   const email = emailInp.value;
   const phone = mobileInp.value;
 
-  // if (!email.match(emailRegex)) {
-  //   errorMessages.emailError = "Incorrect email address";
-  // } else {
-  //   errorMessages.emailError = null;
-  // }
-
   if (email.length < 2) {
     errorMessages.emailError = "Имя должно быть не менее трех букв";
     document.querySelector('.box-name').classList.add('error');
@@ -152,32 +167,12 @@ const validateForm = function () {
   if (!phone.match(phoneRegex)) {
     errorMessages.phoneError = "Неверный формат телефона";
     document.querySelector('.box-phone').classList.add('error');
-    // document.querySelector('.phone-error').style.color = 'red';
-    // document.querySelector('.phone-error').style.fontSize = 17 + 'px';
-    // document.querySelector(".phone-error").textContent = errorMessages.phoneError;
   } else {
     errorMessages.phoneError = null;
     document.querySelector('.box-phone').classList.remove('error');
-    // document.querySelector(".phone-error").textContent = errorMessages.phoneError;
   }
-
-  // if (!checkbox) {
-  //   errorMessages.checkError = "You must be agree";
-  // } else {
-  //   errorMessages.checkError = null;
-  // }
-
-  // document.querySelector('.email-error').style.color = 'red';
-  // document.querySelector('.email-error').style.fontSize = 17 + 'px';
   document.querySelector(".email-error").textContent = errorMessages.emailError;
   document.querySelector(".phone-error").textContent = errorMessages.phoneError;
-
-  // document.querySelector('.phone-error').style.color = 'red';
-  // document.querySelector('.phone-error').style.fontSize = 17 + 'px';
-  // document.querySelector(".phone-error").textContent = errorMessages.phoneError;
-
-  // emailInp.style.borderColor = 'red'
-  // mobileInp.style.borderColor = 'red'
 
   const resultOfErrors = Object.values(errorMessages).every(
     (elem) => elem === null
@@ -202,11 +197,11 @@ form.addEventListener("submit", async (e) => {
       `https://api.telegram.org/bot${TOKEN}/sendMessage?chat_id=${BOT_ID}&text=${result}&parse_mode=html`
     );
 
-    // emailInp.style.borderColor = 'transparent'
-    // mobileInp.style.borderColor = 'transparent'
-
     emailInp.value = "";
     mobileInp.value = "";
-    // checkInp.checked = false;
+    // alert('Ваше сообщение отправлено')
   }
+
+  window.open("thx.html");
+  // popup.classList.remove('active')
 });

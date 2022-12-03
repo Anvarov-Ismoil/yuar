@@ -95,6 +95,11 @@ body {
   padding-bottom: 25px;
 }
 
+.titles .thx-title {
+  color: var(--white);
+  font-size: 80px;
+}
+
 /* Pop-up */
 .popup {
   position: fixed;
@@ -200,6 +205,106 @@ body {
   color: red;
 }
 
+/* loader */
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(218, 214, 214);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.loader-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gegga {
+  width: 0;
+}
+
+.snurra {
+  filter: url(#gegga);
+  position: absolute;
+}
+
+.stopp1 {
+  stop-color: #61B3C9;
+}
+
+.stopp2 {
+  stop-color: #074D88;
+}
+
+.halvan {
+  animation: Snurra1 10s infinite linear;
+  stroke-dasharray: 180 800;
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 23;
+  stroke-linecap: round;
+}
+
+.strecken {
+  animation: Snurra1 3s infinite linear;
+  stroke-dasharray: 26 54;
+  fill: none;
+  stroke: url(#gradient);
+  stroke-width: 23;
+  stroke-linecap: round;
+}
+
+.skugga {
+  filter: blur(5px);
+  opacity: 0.3;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(3px, 3px);
+}
+
+@keyframes Snurra1 {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -403px;
+  }
+}
+
+/* To top ------> */
+.to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 60px;
+  bottom: 60px;
+  z-index: 99;
+  background: var(--brand-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  box-shadow: inset 0 0 10px #999,
+    0 0 30px #000;
+  cursor: pointer;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.to-top a {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--white);
+}
 
 /* Header */
 .header {
@@ -449,6 +554,10 @@ body {
   width: 45%;
 }
 
+.advantages .wrapper .advantage .desc {
+  font-size: 22px;
+}
+
 .advantages .wrapper .advantage .icon img {
   width: 70px;
   height: 70px;
@@ -668,9 +777,32 @@ body {
   user-select: none;
 }
 
+/* Partners */
+.partners {
+  padding: 50px 0;
+}
+
 .clients .titles,
 .partners .titles {
   text-align: center;
+}
+
+.partners .swiper .swiper-wrapper .swiper-slide .sarkor {
+  /* height: 100px; */
+  width: 100%;
+}
+
+.partners .swiper .swiper-wrapper .swiper-slide .enter_engineering {
+  height: 100px;
+  width: 100%;
+}
+
+.partners .swiper .swiper-wrapper .swiper-slide .durable_beton {
+  height: 100px;
+}
+
+.partners .swiper .swiper-wrapper .swiper-slide .uztelecom {
+  height: 100px;
 }
 
 /* --- Clients --- */
@@ -679,21 +811,9 @@ body {
   margin: 150px 0;
 }
 
-.clients .swiper .swiper-wrapper .swiper-slide .second {
-  height: 100px;
-}
-
-.clients .swiper .swiper-wrapper .swiper-slide .third {
-  height: 100px;
-}
-
-.clients .swiper .swiper-wrapper .swiper-slide .fourth {
-  height: 100px;
-}
-
 /* -- Request --- */
 .request {
-  padding: 100px 0;
+  padding: 70px 0 0;
 }
 
 .request .container {
