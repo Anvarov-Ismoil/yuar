@@ -48,10 +48,10 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   slidesPerView: 3,
   spaceBetween: 50,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     1440: {
       slidesPerView: 3,
