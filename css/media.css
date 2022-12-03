@@ -1,0 +1,455 @@
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1025px;
+  }
+
+  .services .wrapper {
+    gap: 80px;
+  }
+
+  .services::after {
+    width: 388px;
+    height: 300px;
+    bottom: -300px;
+  }
+
+  .footer .map {
+    max-width: 1000px;
+  }
+}
+
+/* --- 1025 --- */
+@media (max-width: 1025px) {
+  .container {
+    max-width: 770px;
+  }
+
+  .header .main .content .title {
+    font-size: 45px;
+  }
+
+  .header .navbar .logo img {
+    width: 90px;
+  }
+
+  .header .navbar .actions .phone a {
+    font-size: 18px;
+  }
+
+  .about .container {
+    flex-wrap: wrap;
+  }
+
+  .about .container .left,
+  .about .container .right {
+    width: 100%;
+  }
+
+  .about .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 0;
+  }
+
+  .about .right .effect {
+    left: 0;
+  }
+
+  .services .wrapper {
+    gap: 30px 60px;
+  }
+
+  .services::before {
+    min-height: 1240px;
+  }
+
+  .products .top {
+    flex-wrap: wrap;
+    padding: 0 0 60px;
+  }
+
+  .products .tab-content {
+    flex-wrap: wrap;
+  }
+
+  .products .product {
+    width: 355px;
+  }
+
+  .products .top .titles {
+    margin-bottom: 20px;
+  }
+
+  .process .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .footer .map {
+    max-width: 750px;
+    height: 400px;
+    top: -120px;
+  }
+
+  .footer .map iframe {
+    height: 300px;
+  }
+
+  .footer .info .btns {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    max-width: 620px;
+  }
+
+  .header .main .content .title {
+    font-size: 30px;
+  }
+
+  .popup .forma {
+    margin: 0 15px;
+  }
+
+  .popup .forma form input {
+    padding: 10px;
+  }
+
+  .popup .forma .close i {
+    font-size: 25px;
+  }
+
+  .popup .forma .form .btns .submit {
+    margin-top: 20px;
+    padding: 12px;
+  }
+
+  .request .container {
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+
+  /* .request .right .btns .btn {
+    margin-top: 10px;
+  } */
+
+  .about .right {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    padding: 85px 0;
+  }
+
+  /* .about .right .effect {
+    left: 0;
+  } */
+
+  .services::before {
+    min-height: 100%;
+  }
+
+  .services .wrapper {
+    gap: 30px;
+  }
+
+  .services::after {
+    display: none;
+  }
+
+  .process {
+    padding: 70px 0;
+  }
+
+  .process .wrapper {
+    padding-top: 50px;
+  }
+
+  .process .wrapper .step {
+    height: 200px;
+  }
+
+  .footer .map {
+    max-width: 586px;
+    height: 350px;
+    top: -80px;
+  }
+
+  .footer .map iframe {
+    height: 270px;
+  }
+
+  .footer .info .logo img {
+    width: 120px;
+  }
+}
+
+/* --- 620 --- */
+@media (max-width: 620px) {
+  .container {
+    width: 430px;
+  }
+
+  .request {
+    margin: 0 15px;
+  }
+
+  .request .container {
+    padding: 30px;
+    /* margin: 0 15px; */
+  }
+
+  .request .left h3 {
+    font-size: 30px;
+  }
+
+  .request .container .left .desc {
+    padding: 20px 0;
+  }
+
+  .request .right .btns .btn {
+    padding: 10px;
+  }
+
+  .advantages .wrapper {
+    gap: 100px 30px;
+  }
+
+  .advantages .wrapper .advantage::before {
+    font-size: 160px;
+  }
+
+  .products .top .tab-nav {
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    margin-top: 190px;
+  }
+
+  .footer .info {
+    padding: 120px 0 60px;
+  }
+
+  .footer .info .contacts h2 {
+    font-size: 20px;
+  }
+
+  .footer .info .contacts p {
+    font-size: 15px;
+  }
+
+  .footer .info .logo img {
+    width: 70px;
+  }
+
+  .footer .map {
+    max-width: 400px;
+    height: 350px;
+    top: -160px;
+  }
+
+}
+
+/* --- 430 --- */
+@media (max-width: 430px) {
+  .container {
+    width: 100%;
+  }
+
+  .header .navbar .actions .phone p {
+    display: none;
+  }
+
+  .header .navbar .actions {
+    gap: 15px;
+  }
+
+  .popup .forma {
+    padding: 20px;
+  }
+
+  .popup .forma form h3 {
+    font-size: 18px;
+  }
+
+  .popup .forma form h4 {
+    font-size: 13px;
+  }
+
+  .titles .uptitle {
+    font-size: 13px;
+  }
+
+  .titles .site-title {
+    font-size: 35px;
+  }
+
+  .about .container {
+    gap: 65px;
+  }
+
+  .about .container .left p {
+    padding: 40px 0 40px;
+  }
+
+  .about .btns .btn.blue {
+    padding: 12px 17px;
+  }
+
+  .about .right {
+    padding: 50px 0;
+  }
+
+  .about .right .effect {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about .right .effect .player {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about .right .player a {
+    font-size: 35px;
+  }
+
+  .services {
+    margin: 70px 0;
+  }
+
+  .services .wrapper .item .image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .services::before {
+    min-height: 100%;
+  }
+
+  .advantages .wrapper {
+    gap: 100px 30px;
+  }
+
+  .advantages .wrapper .advantage::before {
+    font-size: 130px;
+  }
+
+  .advantages .wrapper .advantage .icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .advantages .wrapper .advantage .desc {
+    font-size: 14px;
+  }
+
+  .process .wrapper .step {
+    width: 150px;
+    height: 185px;
+    padding: 5px;
+  }
+
+  .footer .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 20px;
+  }
+
+  .footer .info .logo {
+    display: none;
+  }
+
+  .footer .map {
+    max-width: 395px;
+    height: 350px;
+    top: -125px;
+  }
+
+  .footer .map iframe {
+    height: 180px;
+  }
+}
+
+/* --- 380 --- */
+@media (max-width: 380px) {
+  .advantages .wrapper .advantage {
+    width: 50%;
+  }
+
+  .process {
+    padding: 15px 0;
+  }
+
+  .process .wrapper .step {
+    width: 140px;
+  }
+
+  .clients .swiper .swiper-wrapper .swiper-slide .first,
+  .clients .swiper .swiper-wrapper .swiper-slide .second {
+    height: 70px;
+  }
+
+
+  .clients .swiper .swiper-wrapper .swiper-slide .third {
+    height: 100px;
+  }
+
+  .clients .swiper .swiper-wrapper .swiper-slide .fourth {
+    height: 100px;
+  }
+
+  .footer .map {
+    max-width: 345px;
+  }
+
+  .products .top .tab-nav {
+    gap: 20px 50px;
+  }
+
+  .products .top .tab-nav .btn {
+    font-size: 15px;
+  }
+
+  .product .left img {
+    width: 140px;
+    height: 130px;
+  }
+
+  .product .right .product-name {
+    padding: 30px 0;
+  }
+
+  .products .product .btns .blue {
+    padding: 7px 20px;
+    text-transform: uppercase;
+  }
+
+  .products .product {
+    padding: 10px 15px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .footer .map {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 325px) {
+  .footer .map {
+    max-width: 285px;
+  }
+  
+  .products .top {
+    padding: 0 0 30px;
+}
+}
+
+@media (max-width: px) {}
+
+@media (max-width: px) {}
