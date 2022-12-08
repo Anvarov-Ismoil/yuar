@@ -7,11 +7,11 @@ window.addEventListener('load', () => {
 const upArrow = document.querySelector('.to-top')
 
 // upArrow.addEventListener('click', () => {
-  //   scrollTo({
-  //     top: 0,
-  //     behavior: 'smooth'
-  //   })
-  // window.open("request.html");
+//   scrollTo({
+//     top: 0,
+//     behavior: 'smooth'
+//   })
+// window.open("request.html");
 // })
 
 window.addEventListener('scroll', () => {
@@ -119,7 +119,6 @@ let targetProduct = ""
 popupBtns.forEach(show => {
   show.addEventListener('click', (e) => {
     popup.classList.add('active')
-    console.log(show.id);
     targetProduct = show.id
   })
 });
@@ -199,9 +198,9 @@ form.addEventListener("submit", async (e) => {
 
     emailInp.value = "";
     mobileInp.value = "";
+    window.open("thx.html");
     // alert('Ваше сообщение отправлено')
   }
 
-  window.open("thx.html");
   // popup.classList.remove('active')
 });

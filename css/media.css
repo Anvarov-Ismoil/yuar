@@ -1,3 +1,4 @@
+/* --- 1440 --- */
 @media (max-width: 1440px) {
   .container {
     max-width: 1025px;
@@ -100,6 +101,7 @@
   }
 }
 
+/* --- 770 --- */
 @media (max-width: 770px) {
   .container {
     max-width: 620px;
@@ -131,20 +133,13 @@
     padding: 40px;
   }
 
-  /* .request .right .btns .btn {
-    margin-top: 10px;
-  } */
-
-  .about .right {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    padding: 85px 0;
+  .titles .thx-title {
+    font-size: 40px;
   }
 
-  /* .about .right .effect {
-    left: 0;
-  } */
+  .about .right {
+    padding: 85px 0;
+  }
 
   .services::before {
     min-height: 100%;
@@ -256,6 +251,10 @@
 @media (max-width: 430px) {
   .container {
     width: 100%;
+  }
+
+  .titles .thx-title {
+    font-size: 20px;
   }
 
   .header .navbar .actions .phone p {
@@ -458,6 +457,7 @@
 
 }
 
+/* --- 350 --- */
 @media (max-width: 350px) {
   .footer .map {
     max-width: 300px;
@@ -468,6 +468,7 @@
   }
 }
 
+/* --- 325 --- */
 @media (max-width: 325px) {
   .footer .map {
     max-width: 285px;
@@ -477,7 +478,3 @@
     padding: 0 0 30px;
   }
 }
-
-@media (max-width: px) {}
-
-@media (max-width: px) {}

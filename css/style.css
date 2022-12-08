@@ -159,8 +159,6 @@ body {
   border-radius: 5px;
 }
 
-.popup .forma form input.error {}
-
 .popup .forma form input#exampleInputMobile1 {
   margin-top: 30px;
 }
@@ -365,8 +363,6 @@ body {
   padding: 100px 0 200px;
 }
 
-.header .main .content {}
-
 .header .main .content .title {
   font-size: 55px;
   text-transform: uppercase;
@@ -397,8 +393,6 @@ body {
 .header .main .content .btns .btn a {
   color: var(--white);
 }
-
-.header .main .content .btns .btn:nth-child(1) {}
 
 .header .main .content .btns .btn.blue {
   background: var(--brand-color);
@@ -690,11 +684,6 @@ body {
   background: var(--tab-title);
 }
 
-.products .product .btns {
-  /* display: flex;
-  align-items: flex-end; */
-}
-
 .products .product .btns .blue {
   padding: 10px 30px;
   text-transform: uppercase;
@@ -873,7 +862,6 @@ body {
   object-fit: cover;
 }
 
-
 /* Footer */
 .footer {
   background: url('../images/footer-bg.png') no-repeat center / cover;
@@ -895,11 +883,9 @@ body {
 .footer .map {
   position: absolute;
   z-index: 5;
-  /* left: 0; */
   top: -200px;
   width: 100%;
   max-width: 1200px;
-  /* margin: 100px auto 0; */
 }
 
 .footer .map iframe {
@@ -952,8 +938,6 @@ body {
   justify-content: space-between;
   padding: 20px;
 }
-
-.copyright .container .studio {}
 
 .copyright .container .studio span {
   color: var(--brand-color);
