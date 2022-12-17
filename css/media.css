@@ -192,7 +192,6 @@
 
   .request .container {
     padding: 30px;
-    /* margin: 0 15px; */
   }
 
   .request .left h3 {
@@ -205,6 +204,7 @@
 
   .request .right .btns .btn {
     padding: 10px;
+    margin-top: 15px;
   }
 
   .advantages .wrapper {
@@ -257,6 +257,10 @@
     font-size: 20px;
   }
 
+  .header {
+    margin-bottom: 20px;
+  }
+
   .header .navbar .actions .phone p {
     display: none;
   }
@@ -283,6 +287,10 @@
 
   .titles .site-title {
     font-size: 35px;
+  }
+
+  .about {
+    padding: 50px 0;
   }
 
   .about .container {
@@ -362,6 +370,10 @@
   .request.question {
     margin-top: 20px;
   }
+
+  /* .request .left {
+    margin-bottom: 20px;
+  } */
 
   .request .right .btns .btn {
     margin-top: 15px;
@@ -455,6 +467,17 @@
     padding: 10px 15px;
   }
 
+}
+
+/* --- 360 --- */
+@media (max-width: 360px) {
+  .footer .map {
+    max-width: 320px;
+  }
+
+  .to-top {
+    right: 10px;
+  }
 }
 
 /* --- 350 --- */
